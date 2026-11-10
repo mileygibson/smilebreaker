@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff8ed">
+    <title>Smile Breaker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="game.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="topbar">
+        <a class="wordmark" href="#home" aria-label="Smile Breaker home">
+          <span class="wordmark-mark" aria-hidden="true">☺</span>
+          <span>GOOD MOOD ARCADE</span>
+        </a>
+        <span class="edition">NO. 01 <span aria-hidden="true">/</span> BRICK BREAKER</span>
+      </header>
+
+      <section class="game-layout" id="home" aria-labelledby="game-title">
+        <div class="game-column">
+          <div class="title-row">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR DAILY DOSE OF DESTRUCTION</p>
+              <h1 id="game-title">Smile <span>Breaker</span></h1>
+            </div>
+            <div class="level-stamp" aria-label="Level 1">LVL<br><strong>01</strong></div>
+          </div>
+
+          <div class="game-frame">
+            <div class="game-hud" aria-live="polite">
+              <div class="hud-stat"><span class="hud-label">SCORE</span><strong id="score">0000</strong></div>
+              <div class="hud-center"><span class="live-dot"></span><span id="status">READY WHEN YOU ARE</span></div>
+              <div class="hud-stat hud-right"><span class="hud-label">LIVES</span><strong id="lives" aria-label="3 lives">● ● ●</strong></div>
+            </div>
+            <div class="canvas-wrap">
+              <canvas id="game" width="800" height="500" aria-label="Breakout game. Move the paddle to keep the yellow smiley ball in play and break all the pink bricks."></canvas>
+              <div class="game-overlay" id="overlay">
+                <div class="overlay-spark" aria-hidden="true">✳</div>
+                <p class="overlay-kicker" id="overlay-kicker">A LITTLE JOY, A LOT OF BRICKS</p>
+                <h2 id="overlay-title">Ready to<br>break things?</h2>
+                <p class="overlay-copy" id="overlay-copy">Keep that smile in the air. Clear each board to reach the next level.</p>
+                <button class="play-button" id="play-button" type="button">
+                  <span id="button-label">Start game</span><span class="button-arrow" aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+            <div class="game-caption">
+              <span><span class="caption-key">01</span> KEEP YOUR EYES ON THE SMILE</span>
+              <span>MADE FOR A BETTER MOOD <span class="caption-heart" aria-hidden="true">♥</span></span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="side-panel" aria-label="How to play">
+          <div class="side-heading">
+            <span class="side-index">THE QUICK GUIDE</span>
+            <span class="guide-icon" aria-hidden="true">✳</span>
+          </div>
+          <h2>Three steps<br>to a good time.</h2>
+          <ol class="instructions">
+            <li><span class="instruction-number">01</span><span><strong>Start the smile.</strong> Hit the button and get that happy face moving.</span></li>
+            <li><span class="instruction-number">02</span><span><strong>Keep it bouncing.</strong> Slide your paddle to catch the smile before it falls.</span></li>
+            <li><span class="instruction-number">03</span><span><strong>Clear the pink.</strong> Break every brick to move on to the next level.</span></li>
+          </ol>
+          <div class="controls-block">
+            <p class="side-index">PICK YOUR PADDLE</p>
+            <div class="control-row"><span>KEYBOARD</span><span class="keycap">←</span><span class="keycap">→</span><span class="control-or">or</span><span class="keycap key-letter">A</span><span class="keycap key-letter">D</span></div>
+            <div class="control-row"><span>TRACKPAD</span><span class="mouse-symbol" aria-hidden="true">⌖</span><span class="control-note">move left & right</span></div>
+          </div>
+          <div class="side-footer"><span class="footer-star" aria-hidden="true">✳</span><span>GOOD LUCK OUT THERE.</span><span class="footer-star" aria-hidden="true">✳</span></div>
+        </aside>
+      </section>
+
+      <footer class="page-footer">
+        <span>ONE PADDLE. ONE SMILE. ZERO BAD VIBES.</span>
+        <span>TAKE A BREATH <span class="footer-sun" aria-hidden="true">☀</span> TAKE YOUR SHOT</span>
+      </footer>
+    </main>
+  </body>
+</html>
