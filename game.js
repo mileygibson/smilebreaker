@@ -15,7 +15,7 @@ const levelStamp = document.querySelector('.level-stamp');
 const WIDTH = canvas.width;
 const HEIGHT = canvas.height;
 const MAX_LEVEL = 5;
-const paddle = { x: WIDTH / 2 - 54, y: HEIGHT - 38, width: 108, height: 12, speed: 500 };
+const paddle = { x: WIDTH / 2 - 54, y: HEIGHT - 38, width: 108, height: 22, speed: 500 };
 const ball = { x: WIDTH / 2, y: paddle.y - 20, radius: 13, dx: 205, dy: -325, speed: 385 };
 const brickSettings = { width: 70, height: 19, gap: 10, top: 55 };
 const keys = new Set();
@@ -74,7 +74,7 @@ function drawPaddle() {
   context.fillStyle = '#29211f';
   context.fillRect(paddle.x, paddle.y, paddle.width, paddle.height);
   context.fillStyle = '#ffda52';
-  context.fillRect(paddle.x + 5, paddle.y + 3, paddle.width - 10, 2);
+  context.fillRect(paddle.x + 5, paddle.y + 5, paddle.width - 10, 3);
 }
 
 function drawSmiley() {
